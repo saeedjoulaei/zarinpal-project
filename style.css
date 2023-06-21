@@ -232,6 +232,75 @@ header {
   position: relative;
   top: -60px;
 }
+.online-payment {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.online-payment img {
+  width: 450px;
+  height: 480px;
+}
+.section-text {
+  margin: 30px 0;
+  width: 530px;
+}
+.section-text h2 {
+  color: #747480;
+  font-family: YekanBakhMedium;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 20px 0 5px;
+}
+.section-text h3 {
+  color: #303030;
+  font-family: YekanBakhHeavy;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 5px 0 10px;
+}
+.section-text p {
+  color: #303030;
+  font-family: YekanBakhMedium;
+  text-align: justify;
+  line-height: 40px;
+  border-bottom: 1px solid #dfe1e4;
+  padding-bottom: 20px;
+  margin-top: 16px;
+}
+.section-links {
+  margin-top: 40px;
+  display: flex;
+}
+.section-links .first-button {
+  font-size: 0.9rem;
+  font-family: iranyekanwebmedium;
+  color: #000;
+  background-color: #ffd900;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.section-links .second-button {
+  font-size: 0.9rem;
+  font-family: iranyekanwebmedium;
+  color: #28457b;
+  background-color: rgba(232, 239, 254, 0.7);
+  padding: 6px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.section-links .second-button img {
+  width: 18px;
+  height: 15px;
+  margin-right: 5px;
+}
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -254,6 +323,16 @@ header {
   header {
     width: 940px;
   }
+  .banner {
+    width: 900px;
+    padding: 60px 40px 120px;
+  }
+  .banner-image img {
+    width: 430px;
+  }
+  .online-payment {
+    width: 940px;
+  }
 }
 @media (max-width: 990px) {
   header {
@@ -269,6 +348,33 @@ header {
   .header-ul li {
     margin: 0 10px;
   }
+  .banner {
+    width: auto;
+    padding: 40px 40px 85px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .banner-image img {
+    display: none;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-text p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  .banner-button {
+    margin-top: 40px;
+  }
+  .online-payment {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-text {
+    width: 95%;
+  }
 }
 @media (max-width: 768px) {
   .header-ul {
@@ -280,5 +386,40 @@ header {
   header {
     width: auto;
     padding: 10px 8px;
+  }
+  .banner {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .online-payment img {
+    width: 460px;
+    height: 480px;
+  }
+}
+@media (max-width: 575px) {
+  .banner {
+    padding: 80px 40px;
+  }
+  .banner-text h3 {
+    font-size: 1.2rem;
+    text-align: right;
+  }
+  .banner-text p {
+    text-align: justify;
+  }
+  .online-payment .section-image {
+    display: none;
+  }
+  .section-text {
+    width: 80%;
+    padding: 0 10px;
+  }
+  .section-text h3 {
+    font-size: 1.5rem;
   }
 }
