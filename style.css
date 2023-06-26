@@ -243,6 +243,9 @@ header {
   width: 450px;
   height: 480px;
 }
+/* .zarin-card {
+  width: 377px;
+} */
 .section-text {
   margin: 30px 0;
   width: 530px;
@@ -395,6 +398,92 @@ header {
   color: #000;
   border-radius: 10px;
 }
+.support {
+  width: 1110px;
+  height: 70px;
+  padding: 0 30px;
+  margin: 50px auto;
+  background-color: #fbf6f1;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.support-number {
+  font-family: YekanBakhHeavy;
+  font-size: 1.5rem;
+}
+#line {
+  margin: 0 15px;
+}
+.phone-number {
+  color: #21254e;
+}
+.support-request {
+  display: flex;
+  color: #21254e;
+  font-family: YekanBakhBold;
+  font-size: 1.5rem;
+}
+.support-request img {
+  width: 20px;
+  margin-right: 10px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: auto;
+}
+footer .footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: calc(100% - 330px);
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+.social-media {
+  width: 330px;
+  padding: 0 30px;
+  margin-bottom: 100px;
+}
+.social-media p {
+  font-family: YekanBakhHeavy;
+  font-size: 1.3rem;
+  color: #303030;
+}
+.social-media div {
+  display: flex;
+  margin-top: 20px;
+}
+.social-media a {
+  background-color: #eff4fe;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+.footer-links p {
+  font-size: 1.3rem;
+  font-family: YekanBakhHeavy;
+  margin-top: 15px;
+  color: #303030;
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-family: iranyekanwebmedium;
+}
+.footer-links li {
+  padding: 8px 0;
+}
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -427,6 +516,19 @@ header {
   .online-payment {
     width: 940px;
   }
+  .online-payment .img-size {
+    width: 390px;
+  }
+  .online-payment .beside-img {
+    width: 496px;
+  }
+  .beside-payout {
+    width: 412px;
+  }
+  .beside-zarinplus {
+    width: 442px;
+  }
+
   .attributes {
     width: 920px;
     padding: 0 8px;
@@ -454,6 +556,9 @@ header {
   }
   .start-box {
     width: 940px;
+  }
+  .support {
+    width: 880px;
   }
 }
 @media (max-width: 990px) {
@@ -494,6 +599,9 @@ header {
     flex-direction: column;
     align-items: center;
   }
+  .online-payment .beside-img {
+    width: 95%;
+  }
   .section-text {
     width: 95%;
   }
@@ -504,6 +612,13 @@ header {
   .start-box {
     margin: 0 38px;
     width: calc(100% - 76px);
+  }
+  .support {
+    width: calc(100% - 120px);
+  }
+  .support-number,
+  .support-request {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 768px) {
@@ -548,6 +663,17 @@ header {
     margin: 0 8px;
     width: calc(100% - 16px);
   }
+  .support {
+    flex-direction: column;
+    align-items: flex-start;
+    background: none;
+  }
+  .support-request {
+    background-color: #fbf6f1;
+    padding: 5px 20px;
+    border-radius: 35px;
+    margin-top: 20px;
+  }
 }
 @media (max-width: 575px) {
   .banner {
@@ -585,5 +711,14 @@ header {
   }
   .start-box p {
     font-size: 1rem;
+  }
+  .support {
+    width: calc(100% - 60px);
+    padding: 0;
+    margin: 50px 30px;
+  }
+  .support-number,
+  .support-request {
+    font-size: 0.95rem;
   }
 }
